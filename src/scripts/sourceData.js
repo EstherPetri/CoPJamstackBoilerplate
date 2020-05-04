@@ -9,8 +9,9 @@ const client = contentful.createClient({
 });
 
 client.getEntries({
-    'content_type': 'card',
+    'content_type': ['card', 'ImageQuestion'],
 })
+
 .then(entries => {
     const dir = './data';
     const jsonData = entries.items;

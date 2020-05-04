@@ -1,3 +1,23 @@
 .row {
     margin: 2rem 0;
 }
+
+.jumbotron {
+    background-color: #FFE6F5 ;
+}
+.btn-primary  {
+    background-color: #7B034A;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #5B0237;
+}
+
+.btn-primary:active{
+    background-color: #5B0237;
+}
+
+h1 {
+    color: #7B034A;
+}
