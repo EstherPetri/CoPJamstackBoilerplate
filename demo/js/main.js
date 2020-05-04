@@ -5,3 +5,5 @@ if (url.protocol === "file:" || url.hostname === "localhost") {
 } else if (url.hostname.includes("netlify.com")) {
     document.getElementById("netlify").style.display = "block";
 }
+
+console.log(ImageQuestion.fields.image1);
