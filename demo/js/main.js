@@ -6,4 +6,3 @@ if (url.protocol === "file:" || url.hostname === "localhost") {
     document.getElementById("netlify").style.display = "block";
 }
 
-console.log(ImageQuestion.fields.image1);

@@ -9,16 +9,24 @@ pagination:
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">{{ ImageQuestion.fields.question }}</h5>
-                    <p class="card-text">
-                    Test
-                    </p>
-                    <img src="{{ ImageQuestion.fields.img1 }}"></img>
-                </div>
-            </div>
+        <div class="col-12 col-md-8 col-lg-8">
+
+         
+                    <h2 class="text-center">{{ ImageQuestion.fields.question }}</h2>
+                    <div class="card col-5" style="background-image:url('{{ ImageQuestion.fields.img1.fields.file.url }}')">
+                        <p class="card-title">{{ ImageQuestion.fields.img1.fields.title }}</p>
+                    </div>
+                              <div class="card col-5" style="background-image:url('{{ ImageQuestion.fields.img2.fields.file.url }}')">
+                        <p class="card-title">{{ ImageQuestion.fields.img2.fields.title }}</p>
+                    </div>
+                              <div class="card col-5" style="background-image:url('{{ ImageQuestion.fields.img3.fields.file.url }}')">
+                        <p class="card-title">{{ ImageQuestion.fields.img3.fields.title }}</p>
+                    </div>
+                              <div class="card col-5" style="background-image:url('{{ ImageQuestion.fields.img4.fields.file.url }}')">
+                        <p class="card-title">{{ ImageQuestion.fields.img4.fields.title }}</p>
+                    </div>
+
+
         </div>
     </div>
 </div>
