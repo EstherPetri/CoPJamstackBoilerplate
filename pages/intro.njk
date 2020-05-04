@@ -9,10 +9,11 @@ layout: layout/main.njk
             <div class="card">
                 <img src="{{ card.fields.gifUrl }}" class="card-img-top" alt="Some gif">
                 <div class="card-body">
-                    <h5 class="card-title">{{ card.fields.title }}</h5>
+                    <h5 class="card-title">{{ quiz.fields.quizTitle }}</h5>
                     <p class="card-text">
                         {{ card.fields.description.content[0].content[0].value }}
                     </p>
+                    <button><a href="#">{{ card.fields.description.content[0].content[0].value }}</a></button>
                 </div>
             </div>
         </div>
