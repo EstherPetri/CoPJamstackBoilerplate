@@ -1,6 +1,5 @@
 function setPoints(){
     localStorage.setItem('points', 0);
-    alert(localStorage.getItem('points'));
 }
 
 function countingPoints(points, lastpage){    
@@ -9,7 +8,6 @@ function countingPoints(points, lastpage){
     localStorage.setItem("points", old+point);
     alert(localStorage.getItem('points'));
     if (lastpage == true){
-        alert(localStorage.getItem('points'));
         console.log('true');
         var totalPoints = localStorage.getItem('points');
         console.log(totalPoints);
