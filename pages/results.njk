@@ -1,0 +1,18 @@
+---
+layout: layout/main.njk
+pagination: 
+    data: results
+    size: 1
+    alias: results
+
+---
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-8">
+                    <h2 class="text-center card-title">You are {{ results.fields.title }}!</h2>
+                    <p> {{ results.fields.description.content[0].content[0].value }} </p>
+                    <img src="{{ results.fields.image.fields.file.url }}" style="max-width:100%">
+        </div>
+    </div>
+</div>

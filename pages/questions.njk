@@ -1,32 +1,40 @@
 ---
 layout: layout/main.njk
 pagination: 
-    data: contentful
+    data: quizQuestion
     size: 1
-    alias: ImageQuestion
+    alias: quizQuestio
 
 ---
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-8">
-
-         
-                    <h2 class="text-center">{{ ImageQuestion.fields.question }}</h2>
-                    <div class="card col-5" style="background-image:url('{{ ImageQuestion.fields.img1.fields.file.url }}')">
-                        <p class="card-title">{{ ImageQuestion.fields.img1.fields.title }}</p>
-                    </div>
-                              <div class="card col-5" style="background-image:url('{{ ImageQuestion.fields.img2.fields.file.url }}')">
-                        <p class="card-title">{{ ImageQuestion.fields.img2.fields.title }}</p>
-                    </div>
-                              <div class="card col-5" style="background-image:url('{{ ImageQuestion.fields.img3.fields.file.url }}')">
-                        <p class="card-title">{{ ImageQuestion.fields.img3.fields.title }}</p>
-                    </div>
-                              <div class="card col-5" style="background-image:url('{{ ImageQuestion.fields.img4.fields.file.url }}')">
-                        <p class="card-title">{{ ImageQuestion.fields.img4.fields.title }}</p>
-                    </div>
+            <h2 class="text-center">{{ quizQuestio.fields.title }}</h2>
+            <div id="firstOption" class="card col-5">
+                <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img1.fields.file.url }}')"> 
+                </div>
+                <p class="card-title">{{ quizQuestio.fields.img1.fields.title }}</p>
+            </div> 
 
 
+            <div id="secondOption" class="card col-5">
+                <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img2.fields.file.url }}')"> 
+                </div>
+                <p class="card-title">{{ quizQuestio.fields.img2.fields.title }}</p>
+            </div> 
+
+            <div id="thirdOption" class="card col-5">
+                <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img3.fields.file.url }}')"> 
+                </div>
+                <p class="card-title">{{ quizQuestio.fields.img3.fields.title }}</p>
+            </div> 
+
+            <div id="fourthOption" class="card col-5">
+                <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img4.fields.file.url }}')"> 
+                </div>
+                <p class="card-title">{{ quizQuestio.fields.img4.fields.title }}</p>
+            </div> 
         </div>
     </div>
 </div>
