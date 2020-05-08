@@ -3,11 +3,10 @@
     <title>{{ title }} - {{ subtitle }}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/src/css/main.css">
-    <script src="/src/js/script.js"></script>
+    <script src="/src/css/script.js"></script>
 </head>
 <body>
-    {% include "../components/header.njk" %}    
-    
+   
     {{ content | safe }}
 </body>
 </html>

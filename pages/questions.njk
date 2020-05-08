@@ -4,37 +4,72 @@ pagination:
     data: quizQuestion
     size: 1
     alias: quizQuestio
-
 ---
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-8">
+    <div class="jumbotron">
             <h2 class="text-center">{{ quizQuestio.fields.title }}</h2>
-            <div id="firstOption" class="card col-5">
-                <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img1.fields.file.url }}')"> 
-                </div>
-                <p class="card-title">{{ quizQuestio.fields.img1.fields.title }}</p>
-            </div> 
 
+            {% if page.url != pagination.href.last %}<a href="{{ pagination.href.next }}">
+                <div id="firstOption" class="card col-5" onclick="countingPoints(1, false)">
+                    <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img1.fields.file.url }}')"> 
+                    </div>
+                    <p class="card-title text-center">{{ quizQuestio.fields.img1.fields.title }}</p>
+                </div> 
+            </a>
+            {% else %}
+                <div id="firstOption" class="card col-5" onclick="countingPoints(1, true)">
+                    <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img1.fields.file.url }}')"> 
+                    </div>
+                    <p class="card-title text-center">{{ quizQuestio.fields.img1.fields.title }}</p>
+                </div> 
+            {% endif %}
 
-            <div id="secondOption" class="card col-5">
-                <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img2.fields.file.url }}')"> 
-                </div>
-                <p class="card-title">{{ quizQuestio.fields.img2.fields.title }}</p>
-            </div> 
+            {% if page.url != pagination.href.last %}<a href="{{ pagination.href.next }}">
+                <div id="firstOption" class="card col-5" onclick="countingPoints(2, false)">
+                    <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img2.fields.file.url }}')"> 
+                    </div>
+                    <p class="card-title text-center">{{ quizQuestio.fields.img2.fields.title }}</p>
+                </div> 
+            </a>
+            {% else %}
+                <div id="firstOption" class="card col-5" onclick="countingPoints(2, true)">
+                    <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img2.fields.file.url }}')"> 
+                    </div>
+                    <p class="card-title text-center">{{ quizQuestio.fields.img2.fields.title }}</p>
+                </div> 
+            {% endif %}
 
-            <div id="thirdOption" class="card col-5">
-                <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img3.fields.file.url }}')"> 
-                </div>
-                <p class="card-title">{{ quizQuestio.fields.img3.fields.title }}</p>
-            </div> 
+                        {% if page.url != pagination.href.last %}<a href="{{ pagination.href.next }}">
+                <div id="firstOption" class="card col-5" onclick="countingPoints(3, false)">
+                    <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img3.fields.file.url }}')"> 
+                    </div>
+                    <p class="card-title text-center">{{ quizQuestio.fields.img3.fields.title }}</p>
+                </div> 
+            </a>
+            {% else %}
+                <div id="firstOption" class="card col-5" onclick="countingPoints(3, true)">
+                    <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img3.fields.file.url }}')"> 
+                    </div>
+                    <p class="card-title text-center">{{ quizQuestio.fields.img3.fields.title }}</p>
+                </div> 
+            {% endif %}
 
-            <div id="fourthOption" class="card col-5">
-                <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img4.fields.file.url }}')"> 
-                </div>
-                <p class="card-title">{{ quizQuestio.fields.img4.fields.title }}</p>
-            </div> 
+                        {% if page.url != pagination.href.last %}<a href="{{ pagination.href.next }}">
+                <div id="firstOption" class="card col-5" onclick="countingPoints(4, false)">
+                    <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img4.fields.file.url }}')"> 
+                    </div>
+                    <p class="card-title text-center">{{ quizQuestio.fields.img4.fields.title }}</p>
+                </div> 
+            </a>
+            {% else %}
+                <div id="firstOption" class="card col-5" onclick="countingPoints(4, true)">
+                    <div class="bg-image" style="background-image:url('{{ quizQuestio.fields.img4.fields.file.url }}')"> 
+                    </div>
+                    <p class="card-title text-center">{{ quizQuestio.fields.img4.fields.title }}</p>
+                </div> 
+            {% endif %}
         </div>
     </div>
 </div>

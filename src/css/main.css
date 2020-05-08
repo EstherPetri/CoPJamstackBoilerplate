@@ -1,10 +1,27 @@
+body {
+    background-image: url('https://www.publicdomainpictures.net/pictures/40000/velka/purple-stripes-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .row {
-    margin: 2rem 0;
+    margin: 4em 0;
 }
 
-.jumbotron {
-    background-color: #FFE6F5 ;
+.jumbotron, .card, .resultcard  {
+    background-color: #FFF ;
+    box-shadow: 1px 1px 5px #c5c5c5;;
+    border-radius: 10px;
+    width: 715px;
 }
+
+.resultcard {
+    padding: 0;
+}
+
+.resultdescription{
+    padding: 10px 15px;
+}
+
 .btn-primary  {
     background-color: #7B034A;
     border: none;
@@ -22,12 +39,16 @@ h1 {
     color: #7B034A;
 }
 
+h2 {
+    color: #7B034A; 
+}
+
 .question-img{
     margin-top: 20px;
 }
 
 .card-title{
-    background-color: #7B034A;
+    background-image: linear-gradient(to right, #a24e80 , #7B034A);
     padding: 5px 15px;
     color: white;
 }
@@ -46,11 +67,15 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 250px;
 }
 
 p.card-title {
     overflow: hidden;
     height: 60px;
     margin: 0;
+}
+
+.yellow {
+    background-color: yellow;
 }
