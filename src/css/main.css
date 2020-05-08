@@ -48,8 +48,8 @@ h2 {
 }
 
 .card-title{
-    background-image: linear-gradient(to right, #a24e80 , #7B034A);
-    padding: 5px 15px;
+    background: #0bb80b;
+    padding: 10px 15px;
     color: white;
 }
 
@@ -72,10 +72,14 @@ h2 {
 
 p.card-title {
     overflow: hidden;
-    height: 60px;
+    height: 50px;
     margin: 0;
 }
 
 .yellow {
     background-color: yellow;
+}
+
+.resultcard img {
+    width: 100%;
 }
