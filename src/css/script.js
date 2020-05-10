@@ -8,9 +8,7 @@ function countingPoints(points, lastpage){
     localStorage.setItem("points", old+point);
     alert(localStorage.getItem('points'));
     if (lastpage == true){
-        console.log('true');
         var totalPoints = localStorage.getItem('points');
-        console.log(totalPoints);
         if(totalPoints < 7){
             window.location.href = "/results/3";
         }
