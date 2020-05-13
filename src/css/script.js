@@ -6,7 +6,6 @@ function countingPoints(points, lastpage){
     var point = Number(points);
     var old = Number(localStorage.getItem('points'));
     localStorage.setItem("points", old+point);
-    alert(localStorage.getItem('points'));
     if (lastpage == true){
         var totalPoints = localStorage.getItem('points');
         if(totalPoints < 7){
